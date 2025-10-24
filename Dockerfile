@@ -1,8 +1,10 @@
 # Usar la imagen oficial ligera de Nginx
 FROM nginx:alpine
 
-# Copiar tu archivo index.html al directorio web raíz de Nginx
+# Copiar tu archivo index.html Y LOS OTROS ARCHIVOS al directorio web raíz de Nginx
 COPY index.html /usr/share/nginx/html/
+COPY "a seamless backgroun.png" /usr/share/nginx/html/
+COPY cumple_video.mp4 /usr/share/nginx/html/
 
 # Exponer el puerto 80 (puerto estándar HTTP)
 EXPOSE 80
