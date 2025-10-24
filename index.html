@@ -15,30 +15,27 @@
             height: 100%;
             margin: 0;
             font-family: Arial, sans-serif;
-            overflow: hidden; /* Evita barras de scroll si el video es grande */
+            overflow: hidden; 
         }
 
         .bg-container {
-            /* === IMAGEN CAMBIADA A TU ARCHIVO DEL REPOSITORIO === */
-            /* Asegúrate que 'a seamless backgroun.png' esté en la misma carpeta que index.html */
+            /* === ARCHIVO DE FONDO CORREGIDO AL NOMBRE REAL === */
             background-image: url('a seamless backgroun.png'); 
             
-            /* Imagen cubre toda la pantalla */
             height: 100%;
             background-position: center;
-            background-repeat: no-repeat; /* Cambiado de 'repeat' a 'no-repeat' por si acaso */
-            background-size: cover; /* Mantenemos 'cover' para que llene la pantalla */
+            background-repeat: no-repeat;
+            background-size: cover; 
             
-            /* Centrar el contenido */
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column; /* Para poner el video debajo del texto */
+            flex-direction: column; 
         }
 
         /* Contenedor del mensaje */
         .message-box {
-            background-color: rgba(0, 0, 0, 0.6); /* Fondo negro semitransparente (ajusta si es necesario) */
+            background-color: rgba(0, 0, 0, 0.6); 
             color: white;
             padding: 20px 40px; 
             border-radius: 15px;
@@ -47,12 +44,12 @@
             margin-bottom: 20px; 
         }
 
-        /* Estilo del título principal (fuente Dancing Script) */
+        /* Estilo del título principal */
         .message-box h1 {
             font-family: 'Dancing Script', cursive;
             font-size: 3.5rem; 
             margin: 0;
-            color: #ffd700; /* Color dorado (ajusta si desentona con tu fondo) */
+            color: #ffd700; 
         }
 
         /* Estilo del subtítulo */
@@ -67,4 +64,37 @@
         .video-container {
             width: 80%; 
             max-width: 640px; 
-            background-color: rgba(0, 0, 0, 0.
+            background-color: rgba(0, 0, 0, 0.7); 
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+        }
+
+        .video-container video {
+            width: 100%; 
+            display: block; 
+            border-radius: 5px; 
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="bg-container">
+        
+        <div class="message-box">
+            <p>Feliz Cumpleaños, mi</p>
+            <h1>Afrodita</h1>
+        </div>
+
+        <div class="video-container">
+            <video controls>
+                <source src="cumple_video.mp4" type="video/mp4"> 
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+        </div>
+
+    </div>
+
+</body>
+</html>
