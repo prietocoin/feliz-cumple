@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Cumpleaños!</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Reseteo básico y configuración del fondo */
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .bg-container {
+            /* === IMAGEN CORREGIDA: MARGARITAS BLANCAS === */
+            background-image: url('https://images.pexels.com/photos/1601775/pexels-photo-1601775.jpeg');
+            
+            /* Imagen cubre toda la pantalla */
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            /* Centrar el mensaje */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Contenedor del mensaje */
+        .message-box {
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+            color: white;
+            padding: 30px 50px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        /* Estilo del título principal (fuente Dancing Script) */
+        .message-box h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 4.5rem; /* Tamaño grande */
+            margin: 0;
+            color: #ffd700; /* Color dorado */
+            /* Quitamos el text-shadow neón */
+        }
+
+        /* Estilo del subtítulo */
+        .message-box p {
+            font-size: 1.5rem;
+            margin-top: 10px;
+            color: white; /* Color blanco simple */
+             /* Quitamos el text-shadow neón */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-container">
+        <div class="message-box">
+            <p>Feliz Cumpleaños, mi</p>
+            <h1>Afrodita</h1>
+        </div>
+    </div>
+
+</body>
+</html>
