@@ -15,60 +15,56 @@
             height: 100%;
             margin: 0;
             font-family: Arial, sans-serif;
+            overflow: hidden; /* Evita barras de scroll si el video es grande */
         }
 
         .bg-container {
-            /* === IMAGEN CORREGIDA: MARGARITAS BLANCAS === */
-            background-image: url('https://images.pexels.com/photos/1601775/pexels-photo-1601775.jpeg');
+            /* === IMAGEN CAMBIADA A TU ARCHIVO DEL REPOSITORIO === */
+            /* Asegúrate que 'a seamless backgroun.png' esté en la misma carpeta que index.html */
+            background-image: url('a seamless backgroun.png'); 
             
             /* Imagen cubre toda la pantalla */
             height: 100%;
             background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+            background-repeat: no-repeat; /* Cambiado de 'repeat' a 'no-repeat' por si acaso */
+            background-size: cover; /* Mantenemos 'cover' para que llene la pantalla */
             
-            /* Centrar el mensaje */
+            /* Centrar el contenido */
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column; /* Para poner el video debajo del texto */
         }
 
         /* Contenedor del mensaje */
         .message-box {
-            background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+            background-color: rgba(0, 0, 0, 0.6); /* Fondo negro semitransparente (ajusta si es necesario) */
             color: white;
-            padding: 30px 50px;
+            padding: 20px 40px; 
             border-radius: 15px;
             text-align: center;
             box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            margin-bottom: 20px; 
         }
 
         /* Estilo del título principal (fuente Dancing Script) */
         .message-box h1 {
             font-family: 'Dancing Script', cursive;
-            font-size: 4.5rem; /* Tamaño grande */
+            font-size: 3.5rem; 
             margin: 0;
-            color: #ffd700; /* Color dorado */
-            /* Quitamos el text-shadow neón */
+            color: #ffd700; /* Color dorado (ajusta si desentona con tu fondo) */
         }
 
         /* Estilo del subtítulo */
         .message-box p {
-            font-size: 1.5rem;
-            margin-top: 10px;
-            color: white; /* Color blanco simple */
-             /* Quitamos el text-shadow neón */
+            font-size: 1.2rem; 
+            margin-top: 5px;
+            margin-bottom: 10px; 
+            color: white; 
         }
-    </style>
-</head>
-<body>
 
-    <div class="bg-container">
-        <div class="message-box">
-            <p>Feliz Cumpleaños, mi</p>
-            <h1>Afrodita</h1>
-        </div>
-    </div>
-
-</body>
-</html>
+        /* Contenedor del video */
+        .video-container {
+            width: 80%; 
+            max-width: 640px; 
+            background-color: rgba(0, 0, 0, 0.
